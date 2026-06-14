@@ -1,6 +1,12 @@
 # Support Integrity Auditor
 
 Support Integrity Auditor is a ticket-auditing system that checks whether a customer support ticket appears to be assigned the wrong priority.
+## Links
+
+GitHub Repository: `https://github.com/ayushman13x/SIA`
+
+Hosted Streamlit App: `https://sia-ticket.streamlit.app/`
+
 
 The project focuses on two cases:
 
@@ -304,12 +310,3 @@ SIA/
     └── train_pipeline.py
 ```
 
----
-
-## Links
-
-GitHub Repository: `ADD_LINK_HERE`
-
-Hosted Streamlit App: `ADD_LINK_HERE`
-
-Demo Video: `ADD_LINK_HERE`
