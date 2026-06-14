@@ -1,0 +1,34 @@
+{
+    "model_name": "distilbert-base-uncased",
+    "task": "binary_priority_mismatch_classification",
+    "target_column": "mismatch_label",
+    "label_mapping": {
+        "0": "Consistent",
+        "1": "Mismatch"
+    },
+    "input_columns": [
+        "Priority_Level",
+        "Issue_Category",
+        "Ticket_Channel",
+        "Resolution_Time_Hours",
+        "Ticket_Subject",
+        "Ticket_Description"
+    ],
+    "input_format": "Assigned Priority + Issue Category + Ticket Channel + Resolution Time Hours + Subject + Description",
+    "max_length": 96,
+    "split_strategy": "70/15/15 stratified split",
+    "train_size": 14000,
+    "validation_size": 3000,
+    "test_size": 3000,
+    "num_train_epochs": 2,
+    "train_batch_size": 16,
+    "eval_batch_size": 32,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "class_weights": [
+        0.6930692791938782,
+        1.7948718070983887
+    ],
+    "imbalance_strategy": "weighted_cross_entropy_loss",
+    "best_model_metric": "macro_f1"
+}
